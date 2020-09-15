@@ -1,8 +1,8 @@
 # ----------------------------------------------------------------------------
 # Nombre:       crud_sqlserver.py
 # Autor:        Gabriel F
-# Creado:       12 de Septiembre 2020
-# Modificado:   12 de Septiembre 2020
+# Creado:       15 de Septiembre 2020
+# Modificado:   15 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -110,7 +110,7 @@ class sqlserver(self):
             print ("No hay conexion a SQL Server")
 
 
-    def delete(self, coneixon):
+    def delete(self, conexion):
         if conexion:
             try:
                 with conexion.cursor() as cursor:
@@ -141,9 +141,9 @@ if __name__ == "__main__":
     print ("Conexión correcta")
 
     """"
-    object1.create()
-    object1.read()
-    object1.update()
-    object1.delete()
+    object1.create(conexion)
+    object1.read(conexion)
+    object1.update(conexion)
+    object1.delete(conexion)
 
     """"
