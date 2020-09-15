@@ -17,30 +17,133 @@ import pyodbc
 class sqlserver(self):
 
     def login(self):
-        # localhost, puede va la direccion ip del servicio. eg. 127.0.0.1
-        direccion_servidor = 'localhost'
-        nombre_bd = 'farmacia'
-        nombre_usuario = 'usuario1'
-        password = '12345'
+        
+        #Variables - datos del servidor
+        server1 = 'localhost'
+        name_bd = 'farmacia'
+        name_user = 'useradm'
+        password = '938477ndm'
 
-        try:  # si la conexión es exitosa
+        try:
+            # Conexion al servidor
             conexion = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
-                              direccion_servidor + ';DATABASE=' + nombre_bd + ';UID=' + nombre_usuario + ';PWD='+password)
+                              server1 + ';DATABASE=' + name_bd + ';UID=' + name_user + ';PWD='+password)
+            return conexion
+
         except Exception as e:
-        #Error
-            print("Ocurrió un Error al conectarse a SQL Server: ", e)
-    def create(self):
-        pass
+        # Error
+            print("Ocurrió un error al conectarse a SQL Server: ", e)
 
-    def read(self):
-        pass
+    def create(self, conexion):
 
-    def update(self):
-        pass
+        if conexion:
+            try:
+                with conexion.cursor() as cursor:
 
-    def delete(self):
-        pass
+                    query = "INSERT INTO venta(venta, piezas_Vendidas, id_medicamento) VALUES (  ?,?,?)"
+                    
+                    # Ingresar los datos en la tabla venta
+                    cursor.execute(query, (234, 2345, 2))
+                    cursor.execute(query, (232, 45, 2))
+                    cursor.execute(query, (232, 25, 2))
+                    cursor.execute(query, (432.2, 34, 2))
 
+            except Exception as e:
+
+                print("Ocurrio un error", e)
+
+            finally:
+                conexion.close()
+
+        else:
+            print("No hay conexion a SQL Server")
+
+    def read(self, conexion):
+        if conexion:
+            try:
+                with conexion.cursor() as cursor:  
+                
+                # sintax de SQL
+                cursor.execute(
+                "SELECT id_venta, venta, piezas_Vendidas, id_medicamento from venta")
+
+                ventas_consulta = cursor.fetchall()
+
+                
+                for filas in ventas_consulta:
+                #imprimir valores encontrados
+                    print(filas)
+
+
+            except Exception as e:
+                print("Ocurrio un error", e)
+
+            finally:  
+                conexion.close()  
+
+        else:
+            print("No hay conexion a SQL Server")
+
+    def update(self, conexion):
+        if conexion:
+            try:
+              with conexion.cursor() as cursor:
+                
+                query="UPDATE venta set id_medicamento=? where id_venta=?"
+                
+                #Variables
+                nuevo_id_medicamento=4 
+                id_venta=13
+
+                cursor.execute(query,(nuevo_id_medicamento, id_venta))
+
+                conexion.commit()
+
+            except Exception as e:
+                print ("Ocurrio un error",e)
+
+            finally:
+
+                conexion.close()
+
+        else:
+            print ("No hay conexion a SQL Server")
+
+
+    def delete(self, coneixon):
+        if conexion:
+            try:
+                with conexion.cursor() as cursor:
+                
+                query="DELETE from venta  where id_venta > ?"
+                #variable
+                nuevo_id_venta=13
+                
+                cursor.execute(query,(nuevo_id_venta))
+
+                #es importante el commit cuando actualizamos a la  BD
+                conexion.commit()
+
+            except Exception as e:
+                print ("Ocurrio un error",e)
+
+            finally:
+
+                conexion.close()
+
+        else:
+            print ("No hay conexion a SQL Server")
+            
 
 if __name__ == "__main__":
-    pass
+    objetct1=sqlserver()
+    conexion=objetct1.login()
+    print ("Conexión correcta")
+
+    """"
+    object1.create()
+    object1.read()
+    object1.update()
+    object1.delete()
+
+    """"
