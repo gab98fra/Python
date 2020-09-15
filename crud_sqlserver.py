@@ -25,7 +25,7 @@ class sqlserver(self):
         password = '938477ndm'
 
         try:
-            # Conexion al servidor
+            # Conexión al servidor
             conexion = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
                               server1 + ';DATABASE=' + name_bd + ';UID=' + name_user + ';PWD='+password)
             return conexion
@@ -50,39 +50,37 @@ class sqlserver(self):
 
             except Exception as e:
 
-                print("Ocurrio un error", e)
+                print("Ocurrió un error", e)
 
             finally:
                 conexion.close()
 
         else:
-            print("No hay conexion a SQL Server")
+            print("No hay conexión a SQL Server")
 
     def read(self, conexion):
         if conexion:
             try:
                 with conexion.cursor() as cursor:  
                 
-                # sintax de SQL
-                cursor.execute(
-                "SELECT id_venta, venta, piezas_Vendidas, id_medicamento from venta")
+                    # sintax de SQL
+                    cursor.execute("SELECT id_venta, venta, piezas_Vendidas, id_medicamento from venta")
 
-                ventas_consulta = cursor.fetchall()
+                    ventas_consulta = cursor.fetchall()
 
                 
-                for filas in ventas_consulta:
-                #imprimir valores encontrados
-                    print(filas)
-
+                    for filas in ventas_consulta:
+                    #imprimir valores encontrados
+                        print(filas)
 
             except Exception as e:
-                print("Ocurrio un error", e)
+                print("Ocurrió un error", e)
 
             finally:  
                 conexion.close()  
 
         else:
-            print("No hay conexion a SQL Server")
+            print("No hay conexión a SQL Server")
 
     def update(self, conexion):
         if conexion:
@@ -100,14 +98,14 @@ class sqlserver(self):
                 conexion.commit()
 
             except Exception as e:
-                print ("Ocurrio un error",e)
+                print ("Ocurrió un error",e)
 
             finally:
 
                 conexion.close()
 
         else:
-            print ("No hay conexion a SQL Server")
+            print ("No hay conexión a SQL Server")
 
 
     def delete(self, conexion):
@@ -115,24 +113,23 @@ class sqlserver(self):
             try:
                 with conexion.cursor() as cursor:
                 
-                query="DELETE from venta  where id_venta > ?"
-                #variable
-                nuevo_id_venta=13
+                    query="DELETE from venta  where id_venta > ?"
+                    #variable
+                    nuevo_id_venta=13
                 
-                cursor.execute(query,(nuevo_id_venta))
+                    cursor.execute(query,(nuevo_id_venta))
 
-                #es importante el commit cuando actualizamos a la  BD
-                conexion.commit()
+                    conexion.commit()
 
             except Exception as e:
-                print ("Ocurrio un error",e)
+                print ("Ocurrió un error",e)
 
             finally:
 
                 conexion.close()
 
         else:
-            print ("No hay conexion a SQL Server")
+            print ("No hay conexión a SQL Server")
             
 
 if __name__ == "__main__":
