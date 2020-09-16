@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------
-# Nombre:       crud_sqlite3.py
+# Nombre:       crud_mysql.py
 # Autor:        Gabriel F
 # Creado:       16 de Septiembre 2020
 # Modificado:   16 de Septiembre 2020
@@ -145,4 +145,3 @@ if __name__ == "__main__":
     #objeto.read()
     #objeto.update()
     #objeto.delete()
-    
