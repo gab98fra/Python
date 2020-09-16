@@ -118,7 +118,7 @@ class sqlserver(self):
                     nuevo_id_venta=13
                 
                     cursor.execute(query,(nuevo_id_venta))
-
+                    
                     conexion.commit()
 
             except Exception as e:

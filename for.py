@@ -2,7 +2,7 @@
 # Nombre:       for.py
 # Autor:        Gabriel F
 # Creado:       12 de Septiembre 2020
-# Modificado:   12 de Septiembre 2020
+# Modificado:   15 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
