@@ -2,7 +2,7 @@
 # Nombre:       crud_sqlserver.py
 # Autor:        Gabriel F
 # Creado:       15 de Septiembre 2020
-# Modificado:   15 de Septiembre 2020
+# Modificado:   19 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ Permite conexión a SQL Server y realizar CRUD
 import pyodbc
 
 
-class sqlserver(self):
+class sqlserver(object):
 
     def login(self):
         
