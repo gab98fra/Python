@@ -1,10 +1,12 @@
 # Python
-scripts básicas de python
+Scripts básicas de python
 
-Módulos CRUD: realizar¿n crud en los diferentes sistemas gestores BD
+Módulos CRUD: realizan crud en los diferentes sistemas gestores BD
 
 1- SQL Server
 2- PostgreSQL
 3- SQLite3
 4- MySQL
  
+
+For: diferentes maneras de implementarlo
