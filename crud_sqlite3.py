@@ -2,7 +2,8 @@
 # Nombre:       crud_sqlite3.py
 # Autor:        Gabriel F
 # Creado:       15 de Septiembre 2020
-# Modificado:   15 de Septiembre 2020
+# GitHub:       https://github.com/gab98fra/
+# Modificado:   20 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 

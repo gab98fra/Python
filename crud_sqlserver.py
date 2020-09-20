@@ -1,8 +1,9 @@
 # ----------------------------------------------------------------------------
 # Nombre:       crud_sqlserver.py
 # Autor:        Gabriel F
+# GitHub:       https://github.com/gab98fra/
 # Creado:       15 de Septiembre 2020
-# Modificado:   19 de Septiembre 2020
+# Modificado:   20 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
