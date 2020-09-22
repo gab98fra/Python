@@ -9,4 +9,5 @@ Módulos CRUD: realizan crud en los diferentes sistemas gestores BD
 4- MySQL
  
 
-For: diferentes maneras de implementarlo
+Módulo For: diferentes maneras de implementarlo
+Módulo excel: permite leer, escribir datos en archivos excel utilizando librería openpyxl
