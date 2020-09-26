@@ -3,12 +3,15 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       22 de Septiembre 2020
-# Modificado:   22 de Septiembre 2020
+# Modificado:   25 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
 """
     Permite leer, escribir y exportar datos archivo excel utilizando Programación Funcional
+
+    Python 3.8.2
+    openpyxl 3.0.5
 
 """
 
