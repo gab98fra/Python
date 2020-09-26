@@ -3,13 +3,15 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       22 de Septiembre 2020
-# Modificado:   22 de Septiembre 2020
+# Modificado:   25 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
 """
     Envía correos electrónicos de manera automática, desde una cuenta de gmail.
     Importante configurar su cuenta de gmail (aplicaciones no seguras) antes de ejecutar el script
+
+    Python 3.8.2
 
 """
 
