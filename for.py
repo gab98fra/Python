@@ -3,12 +3,14 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       12 de Septiembre 2020
-# Modificado:   20 de Septiembre 2020
+# Modificado:   25 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
 """
-Diferentes maneras de implementar FOR
+    Diferentes maneras de implementar FOR
+    
+    Python 3.8.2
 
 """
 
