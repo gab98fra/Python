@@ -1,5 +1,5 @@
 # Python
-Scripts básicas de python
+Scripts Python
 
 Módulos CRUD: realizan crud en los diferentes sistemas gestores BD
 
@@ -10,4 +10,9 @@ Módulos CRUD: realizan crud en los diferentes sistemas gestores BD
  
 
 Módulo For: diferentes maneras de implementarlo
+
 Módulo excel: permite leer, escribir datos en archivos excel utilizando librería openpyxl
+
+Módulo pandas: trabajar con archivos excel
+
+Módulo email: enviar correos electrónicos
