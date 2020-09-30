@@ -13,7 +13,7 @@
         Detecta las características del OS y la ip de la máquina que estemos utilizando:
         sistema operativo, versión, arquitectura, nombre del dispositivo, etc.
     
-        Obtner de ip de una página web, ejemplo: google
+        Obtener la ip de una página web, ejemplo: google
 
     Python 3.8.2
 
