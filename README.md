@@ -17,4 +17,4 @@ Módulo pandas: trabajar con archivos excel
 
 Módulo email: enviar correos electrónicos
 
-Módulo system: obtiene las características del OS en uso: nombre del sistema operativo, arquitectura, procesador, ram, etc. Al mismo tiempo dectar la ip asignada. Finalmente obtiene la ip de cualquier sitio web
+Módulo system: obtiene las características del OS en uso: nombre del sistema operativo, arquitectura, procesador, ram, etc., al mismo tiempo detecta la ip asignada. Finalmente obtiene la ip de cualquier sitio web
