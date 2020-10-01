@@ -8,7 +8,7 @@
 # ----------------------------------------------------------------------------
 
 """
-    El siguiente scrip realiza lo siguiente:
+    El scrip realiza lo siguiente:
 
         Detecta las características del OS y la ip de la máquina que estemos utilizando:
         sistema operativo, versión, arquitectura, nombre del dispositivo, etc.
@@ -41,7 +41,7 @@ class info_os(object):
         self.get_data_os()
 
     def get_data_os(self):
-    #Obtención de la información
+    #Obtener info
 
         for info in self.info:
 
