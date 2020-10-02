@@ -12,7 +12,7 @@
     Permite automatizar el envío de mensajes a través de WhatsApp
 
     python 3.8.1
-    selenio 3.141.0
+    selenium 3.141.0
 
 """
 
@@ -52,9 +52,9 @@ class WhatsApp(object):
 
         """
         #Pausar 5 segundos  
-        #time.sleep(5)
+        time.sleep(5)
         
-        #Botón contiuar
+        #Botón continuar
         self.browser.find_elements_by_xpath("//*[@id='action-button']")[0].click()
 
         #Botón usar WhatsApp Web
