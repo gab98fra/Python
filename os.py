@@ -13,7 +13,7 @@ import subprocess
 
 """
 
-    El siguiente script permite interactuar con el sistema operativo, 
+    El script permite interactuar con el sistema operativo, 
     utilizando algunas particularidades del módulo OS y subprocess
 
     Python 3.8.2
