@@ -8,12 +8,12 @@
 # ----------------------------------------------------------------------------
 
 """
-    El scrip realiza lo siguiente:
+    El script realiza lo siguiente:
 
-        Detecta las características del OS y la ip de la máquina que estemos utilizando:
-        sistema operativo, versión, arquitectura, nombre del dispositivo, etc.
+        -Detecta las características del OS y la ip de la máquina:
+         sistema operativo, versión, arquitectura, nombre del dispositivo, etc.
     
-        Obtener la ip de una página web, ejemplo: google
+        -Obtiene la ip de una página web, ejemplo: google
 
     Python 3.8.2
 
