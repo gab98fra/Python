@@ -1,0 +1,20 @@
+[
+    {
+        "Nombre": "Carlos",
+        "Apellido":"Mendez",
+        "Puesto": "Empleado"
+    },
+
+    {
+        "Nombre": "Marco",
+        "Apellido":"Sosamontes",
+        "Puesto": "Gerente"
+    },
+
+    {
+        "Nombre": "Antonio",
+    
+        "Puesto": "Director"
+    }
+
+]
