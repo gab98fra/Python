@@ -2,8 +2,8 @@
 # Nombre:       system.py
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
-# Creado:       30 de Septiembre 2020
-# Modificado:   02 de Diciembre 2020
+# Creado:       30 de septiembre 2020
+# Modificado:   02 de diciembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
