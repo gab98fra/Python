@@ -3,7 +3,7 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       02 de diciembre  2020
-# Modificado:   02 de diciembre  2020
+# Modificado:   03 de diciembre  2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -35,10 +35,14 @@ class file_json():
 
             #Acceder por elementos
             for info in info_json:
-                print("nombre: ",info.get("Nombre", ""))#"" si no lo encuentra regresa vacío
-                print("Apellido: ",info.get("Apellido", ""))
-                print("Pueto: ",info.get("Puesto"), "\n")
-        
+                
+                f_name=info.get("Nombre", "")#"" si no lo encuentra regresa vacío
+                l_name=info.get("Apellido", "")
+                job=info.get("Puesto")
+
+                print("Nombre: ", f_name)
+                print(f"Apellido: {l_name}")
+                print(f"Puesto: {job}"+ "\n")
 
 
 
