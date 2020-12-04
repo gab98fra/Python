@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------
-# Nombre:       get_html.py
+# Nombre:       index.py
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       04 de diciembre 2020
@@ -8,12 +8,17 @@
 # ----------------------------------------------------------------------------
 
 """
-    API
+    APIs trabajando de lado del cliente
 
     Python 3.8.2
 
 """
 
+import requests
 
 
+print ("Hola, como estás")
 
+
+if __name__ == "__main__":
+    pass
