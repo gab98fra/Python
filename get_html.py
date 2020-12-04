@@ -14,9 +14,8 @@
 
 """
 
-#Librería nativa
+#Librerías nativas
 from http.client import HTTPConnection
-
 import socket
 import ssl
 
