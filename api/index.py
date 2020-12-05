@@ -15,7 +15,7 @@
         -HEADERS
         -PUT -  actualizar
         -DELETE
-        -Dowload - ejemplo descarga de una imagen de la web
+        -Dowload - descarga de una imagen de la web
 
     python 3.8.2
     requests 2.25.0
