@@ -3,7 +3,7 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       04 de diciembre 2020
-# Modificado:   05 de diciembre 2020
+# Modificado:   04 de diciembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -15,7 +15,7 @@
         -HEADERS
         -PUT -  actualizar
         -DELETE
-        -Descargar una imagen y video
+        -Dowload - ejemplo descarga de una imagen de la web
 
     python 3.8.2
     requests 2.25.0
@@ -39,7 +39,7 @@ def get_html():
         'age':2010
     }
     
-    #Enviar parámetro
+    #obtener respuesta - Enviar parámetro
     response=requests.get(url, params=args)
 
     if response.status_code==200:
@@ -65,7 +65,7 @@ def post ():
         'age':2010
     }
     
-    #Enviar parámetro
+    #Obtener respueata - Enviar parámetro
     response=requests.post(url, json=payload)#Los datos se incrustan en data
 
     if response.status_code==200:
@@ -97,7 +97,7 @@ def header ():
         "access-token":"abcd",
     }
 
-    #enviar parámetros
+    #Obtener respuesta - enviar parámetros
     response=requests.post(url, json=payload, headers=headers)
 
     if response.status_code==200:
@@ -121,7 +121,7 @@ def put():
         'age':2010
     }
 
-    #enviar parámetros
+    #Obtener respuesta- enviar parámetros
     response=requests.put(url, json=payload)
 
     if response.status_code==200:
@@ -146,7 +146,7 @@ def delete():
         'age':2010
     }
 
-    #enviar parámetros
+    #Obtener respyesta - enviar parámetros
     response=requests.delete(url, json=payload)
 
     if response.status_code==200:
@@ -160,10 +160,34 @@ def delete():
         print(response.url)
 
 
+def dowload():
+#Descargar imagen de la red
+    
+    url="https://www.oxfordstudent.com/wp-content/uploads/2019/05/rad-cam.jpg"
+    
+    #obtener respuesta - Enviar parámetro 
+    response=requests.get(url, stream=True) #Sream deja la conexión abierta
+
+    if response.status_code==200:
+        
+        with open("image_descargada.jpg", "wb") as file:
+        #Descarga la imagen
+            
+            for img in response.iter_content():
+            #Descarga el archivo poco a poco
+                file.write(img)
+            
+
+    #Cerrar conexión
+    response.close()
 
 if __name__ == "__main__":
-    #get_html()
-    #post()
-    #header()
-    #put()
-    #delete()
+    
+    """
+    get_html()
+    post()
+    header()
+    put()
+    delete()
+    dowload()
+    """
