@@ -16,6 +16,7 @@
         -PUT -  actualizar
         -DELETE
         -Dowload - descarga de una imagen de la web
+        -Pokemon - ejemplo de pokeapi.com
 
     python 3.8.2
     requests 2.25.0
@@ -42,7 +43,7 @@ def get_html():
     #obtener respuesta - Enviar parámetro
     response=requests.get(url, params=args)
 
-    if response.status_code==200:
+    if response.status_code==200: #response.ok
         
         #Obtener Estructura html
         html=response.content        
@@ -181,6 +182,33 @@ def dowload():
     #Cerrar conexión
     response.close()
 
+def pokemon():
+#Obtener los nombres de algunos pokemones
+
+    url="https://pokeapi.co/api/v2/pokemon-form"
+
+    #obtener respuesta -  enviar url como parámetro
+    response=requests.get(url)
+
+    if response.ok: #response.status_code==200
+        
+        #Obtener en formato json 
+        json_data=response.json()
+        
+        #print(json_data)
+
+        #Obtenemos los datos json de "results"
+        results=json_data.get("results", "")
+        
+        if results:
+        #Obtener los nombres de los pokémones
+
+            for all in results:
+                name=all['name']#acceder a los datos name
+                print(name)
+        
+    
+
 if __name__ == "__main__":
     
     """
@@ -190,4 +218,6 @@ if __name__ == "__main__":
     put()
     delete()
     dowload()
+    pokemon()
+
     """
