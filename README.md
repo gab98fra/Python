@@ -1,22 +1,23 @@
 # Python
-Scripts Python
+Scripts básicas de Python
 
-Módulos CRUD: realizan crud en los diferentes sistemas gestores BD
-
-1- SQL Server
-2- PostgreSQL
-3- SQLite3
-4- MySQL
+## Módulos CRUD: 
+Realizan crud en los diferentes sistemas gestores BD
  
+## Módulo For: 
+Diferentes maneras de implementarlo
 
-Módulo For: diferentes maneras de implementarlo
+## Módulo excel: 
+Permite leer, escribir datos en archivos excel utilizando librería openpyxl
 
-Módulo excel: permite leer, escribir datos en archivos excel utilizando librería openpyxl
+## Módulo pandas: 
+Trabajar con archivos excel
 
-Módulo pandas: trabajar con archivos excel
+## Módulo email: 
+Enviar correos electrónicos
 
-Módulo email: enviar correos electrónicos
+## Módulo system: 
+Obtiene las características del OS en uso: nombre del sistema operativo, arquitectura, procesador, ram, etc., al mismo tiempo detecta la ip asignada. Finalmente obtiene la ip de cualquier sitio web
 
-Módulo system: obtiene las características del OS en uso: nombre del sistema operativo, arquitectura, procesador, ram, etc., al mismo tiempo detecta la ip asignada. Finalmente obtiene la ip de cualquier sitio web
-
-Módulo whatsapp: permite automatizar el envío de mensajes a través de WhatsApp, utilizando la librería selenium
+## Módulo whatsapp: 
+Permite automatizar el envío de mensajes a través de WhatsApp, utilizando la librería selenium
